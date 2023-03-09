@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="WordPress - Admin">
+
+	<listeners>
+		<listener class-name="commons.MethodListener" />
+		<listener class-name="reportConfig.ReportNGListener" />
+		<listener class-name ="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name ="org.uncommons.reportng.JUnitXMLReporter" /> 
+		
+	</listeners>
+
+	<parameter name="urlAdmin" value="https://hautravel.com/wp-admin/" />
+	<parameter name="urlUser" value="https://hautravel.com/" />
+
+	<test name="Run on Chrome">
+		<parameter name="browser" value="Chrome" />
+		<classes>
+			 <class name="com.wordpress.admin.Post_01_Creat_Red_Update_Delete_Search" />
+		</classes> 
+		
+		<!-- 	<packages>
+			 <package name="com.wordpress.admin" />
+		</packages> -->
+		
+	</test>
+
+</suite>

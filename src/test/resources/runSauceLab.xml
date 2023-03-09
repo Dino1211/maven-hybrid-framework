@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SauceLab">
+
+	<listeners>
+		<listener class-name="commons.MethodListener" />
+		
+	</listeners>
+
+	<parameter name="appUrl" value="https://www.saucedemo.com/" />
+
+	<test name="Run on CHROME">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			 <class name="com.sauce.sort.Level_15_Sort_Asc_Desc" />
+		</classes> 
+		
+		<!-- 	<packages>
+			 <package name="com.wordpress.admin" />
+		</packages> -->
+		
+	</test>
+
+</suite>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="JQuery Datatable">
+<listeners>
+		<listener class-name ="commons.MethodListener"></listener>
+	</listeners>
+
+	<parameter name="url" value="https://blueimp.github.io/jQuery-File-Upload/" />
+	
+  <test name="Run on Chrome">
+    	 <parameter name="browser" value="chrome" />
+   		 <classes>
+      		<class name="com.jquery.datatable.Level_10_Upload_Files" />
+    </classes>
+  </test> 
+  
+</suite> 
